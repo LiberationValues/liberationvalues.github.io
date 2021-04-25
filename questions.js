@@ -99,7 +99,7 @@ questions = [
         },
     },
     {
-        "question": "We must secure the existence of our peopel and a future for white children..",
+        "question": "We must secure the existence of our people and a future for white children.",
         "effect": {
             "rcsm": 10,
             "sxsm": 0,
