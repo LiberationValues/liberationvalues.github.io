@@ -1,746 +1,1322 @@
 questions = [
-    {
-        "question": "The workers should own the means of production",
+
+        {"question": "White people are superior to other races, and eugenics are an acceptable means of achieving a white ethnostate.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A stronger state will only subjugate socialism, thus state socialism is an oxymoron",
-        "effect": {
-            "radi": -10,
-            "coop": 10,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+       "question": "Black people are superior to other races, and eugenics are an acceptable means of achieving a black ethnostate.",
+       "effect": {
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "I'd rather ally with Rothbard than Stalin",
+        "question": "The KKK has done nothing wrong.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+             "rcsm": 10,
+             "sxsm": 0,
+             "agsm": 0,
+             "hmpb": 0,
+             "cisp": 0,
+             "fatp": 0
+         },
     },
     {
-        "question": "Co-ops are a good way to gradually move into socialism",
+         "question": "The white race has done enough harm to blacks that we need to discriminate against whites.",
+         "effect": {
+              "rcsm": -10,
+              "sxsm": 0,
+              "agsm": 0,
+              "hmpb": 0,
+              "cisp": 0,
+              "fatp": 0
+          },
+        },
+    {
+        "question": "There is nothing wrong with using strong ethnic slurs against black people.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 10
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A welfare state only pacifies the workers, which ends the labour movement.",
+        "question": "There is nothing wrong with using strong ethnic slurs against white people.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Since anarcho capitalists and the like believe in Voluntary association, there's no reason why we shouldn't take arms with them",
+        "question": "The Democratic Party is a black nationalist party.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "All hierarchies must be questioned.",
+        "question": "The Republican Party is a white nationalist party.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Direct action and the like only hurt our movement",
+        "question": "The slavery in the south was deplorable.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "We must support revolutionary movements abroad",
+        "question": "We must secure the existence of our peopel and a future for white children..",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": -10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Reform doesn't work towards change.",
+        "question": "Black Lives Matter is a black nationalist organization.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "We should use direct action, sabotage and even violence.",
+        "question": "Alt-Right racial theory is perfect.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "You cannot be a socialist, without striving towards social progress",
+        "question": "In my opinion, blacks are more likely to be criminals than whites.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": -10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Socialism is the best system that protects traditional values",
+        "question": "A black America with no record of whites in its history is to be preferred.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Socialism will eventually develop into Communism",
+        "question": "Since the human race originated in Africa/Middle East, blacks are finer people than whites.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Even if a meme, the ideas of Fully Automated Luxury Gay Space Communism would be ideal",
+        "question": "There is nothing wrong with depicting blacks with highly accented English in movies.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": -10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The concept of National Liberation is a good concept, as we must protect our nations from foreign capital",
+        "question": "Black people are an unfairly marginalized group.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A genuine Free Market is only avaiable through a Socialist network",
+        "question": "White people are an unfairly marginalized group.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 10
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The Idea of Workers self Management is an idea we should strive for to liberate every worker",
+        "question": "Affirmative action and reparations are to be given to blacks due to how unfair the status quo is against blacks.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": -10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Rapid change only results in worse outcomes",
+        "question": "I am a neo-reactionary, neo-Nazi, or American ethnic ultranationalist.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 10,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Companies will never collaborate to help the Environment, hence they should be collectivized or nationalized",
+        "question": "The man should head the house.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "No Government, if there even is one, should bailout corporate power",
+        "question": "The woman should head the house.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Corporate Lobbying should be banned",
+        "question": "Women should have no place in the military.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "I'd rather live in a neoliberal society than a communist one",
+        "question": "Women are property.",
         "effect": {
-            "radi": 10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 10
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Nationalization is equally as bad as Privatization",
+        "question": "Men are property.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Communes or similar should be allowed to act as gated communities for certain cultures",
+        "question": "Traditional gender roles are unfairly patriarchal.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 10,
-            "prog": 10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Free Markets are more efficient in resource allocation",
+        "question": "There is nothing wrong with radical feminism.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 10
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A Fair Market is more ideal than a fully planned economy",
+        "question": "A woman should have the right to vote.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 10
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Achieving Socialism through Electoral means is ideal",
+        "question": "Women are the weaker vessel.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Reforming capitalist society to achieve basic rights for workers is a desirable and realistic goal.",
+        "question": "I'd rather have only one dad than only one mom.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Negative consequences of a revolution, such as devastation of land and death tolls, generally outweigh whatever positives.",
+        "question": "Patriarchy is a desirable goal.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Any Violence against undesirable people is acceptable aslong as it helps revolutionary motion.",
+        "question": "Men are inherently sex predators and rapists.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Revolution is the most succesful and ideal way of achieving a Progressive society.",
+        "question": "There is nothing wrong with objectifying women.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Marx's concept of 'from each according to their ability, to each according to their need' is a good principle we should abide to.",
+        "question": "I trust men more than women in terms of government and labor.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Liberal Democracy is a viable way to achieve a Socialist society",
+        "question": "The manosphere is a bulwark against the corrosion of the nuclear family unit.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A society should rather gradually progress into a Socialist society.",
+        "question": "Matriarchy is a desirable goal.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A planned economy based around computers, like Cybersyn, is a concept worth investigating.",
+        "question": "Affirmative action given to women is a must for society.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": -10
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "An economy is generally designed better when it is organized bottom-up rather than top-down",
+        "question": "Even first-wave feminism is bad.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A world socialist republic is a realistic and desirable goal.",
+        "question": "Women have no place in society.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": -10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": -10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Nationalism and patriotism are Reactionary impulses that are unacceptable in a socialist society.",
+        "question": "Men have no place in society.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": -10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 10,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Foreign officials, especially Socialist or Progressive officials have no right to dictate policy in another country.",
+        "question": "Children are less developed than adults.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The global socialist movement is too wide and diverse to be led by a single party or organization.",
+        "question": "A minimum voting age will be beneficial to society.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": -10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Trade unions and/or workers councils should form the basis of a socialist society.",
+        "question": "A maximum voting age will be beneficial to society.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Minority populations have the right to receive special legal protections and rights.",
+        "question": "Criminally charging two teenagers of the same age who had consensual sex is good.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": -10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "People of similar cultures, like the Kurds, have the right to unite into Autonomous Federations or Confederations.",
+        "question": "Criminally charging two centenarians of the same age who had consensual sex is a must.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Minority populations have the right to self-defence and to bear arms, doesn't matter the situation.",
+        "question": "There is nothing wrong with minimum drinking ages.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": -10,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The Right to bear Arms is essential to the Socialist movement, and any restrictment of it should be fought against, even by violent means if necessary.",
+        "question": "There is nothing wrong with maximum drinking ages.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "I'd be happier if Modern day America preserved its original ideals of Individual Liberty and Freedom.",
+        "question": "Giving children full autonomy over their bodies would be disastrous.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "If i lived in an anarcho capitalist society i'd rather contribute to increase cooperative power",
+        "question": "Giving the elderly full bodily autonomy over their bodies would be disastrous.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The free market distributes resources between different parties (workers, management) in an unfair manner, favoring capitalist corporations.",
+        "question": "Children are the property of adults.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": -10
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Any Market system will inevitably allow harmful monopolies for the consumers to form and take over.",
+        "question": "Adults are the property of children.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": -10
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Since Libertarian rightists are, essentially, followers of bourgeois capitalism, there is no logical reason i should ally with such pigs.",
+        "question": "Children are incompetent when it comes to making good decisions about permanent life choices.",
         "effect": {
-            "radi": 0,
-            "coop": 10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "An AnCap society is either taken over by cooperative systems, or will reform into a corporatocratic state. Both ends are essentially not ideal.",
+        "question": "Adults and the elderly are incompetent when it coems to making good decisions about permanent life choices.",
         "effect": {
-            "radi": 0,
-            "coop": 10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Even if an AnCap area would form into a corporate dictatorship, we can still bear arms and fight, since the dictator has a weak fist.",
+        "question": "The Children's Online Privacy Protection Act is not there to protect children but to just infringe on rights.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Socialism is a Gradual process, not a Rapid one.",
+        "question": "Restraining elderly people on what they can do on the internet is a must.",
         "effect": {
-            "radi": 10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A minarchist society is preferable over complete anarchy",
+        "question": "The elder is to rule, and the younger is to submit.",
         "effect": {
-            "radi": 10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "The State will eventually wither away, leading the people into forming a Communist society.",
+        "question": "Children do not need any rights at all.",
         "effect": {
-            "radi": 10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Communism is too Utopian and unrealistic, it's better to stop at Socialism.",
+        "question": "Elderly folk should not have any rights at all.",
         "effect": {
-            "radi": 10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-		}
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A centrally planned economy is needed to develop third world countries",
+        "question": "Young peoples' rights are expendable.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": -10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A highly centralized economy is not State Socialism, but rather Corporatism, as the workers don't even indirectly own the Means of Production.",
+        "question": "Old peoples' rights are expendable.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "A Mutual Aid-based society is significantly better than a Transitional Socialist state.",
+        "question": "Civil unions between people of the same sex are not marriage.",
         "effect": {
-            "radi": 0,
-            "coop": -10,
-            "ownr": -10,
-            "glob": 0,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "Under no pretext...",
+        "question": "I enjoy making very homophobic remarks just because thare is nothing wrong with it.",
         "effect": {
-            "radi": -10,
-            "coop": 0,
-            "ownr": 0,
-            "glob": 0,
-            "prog": 0,
-            "rebl": -10,
-            "mark": 0
-        }
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
     },
     {
-        "question": "International Coalitions are a good way to spread our values",
+        "question": "I feel uncomfortable around heterosexual people.",
         "effect": {
-            "radi": 0,
-            "coop": 0,
-            "ownr": 0,
-            "glob": -10,
-            "prog": 0,
-            "rebl": 0,
-            "mark": 0
-        }
-    }
-];
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I feel uncomfortable around homosexual people.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Homosexuality is deplorable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Heterosexuality is deplorable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Homosexual intercourse should be against the law.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Heterosexual intercourse should be against the law.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I've contemplated vandalizing homosexual peoples' houses on the basis of them being homosexual.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I've contemplated vandalizing straight peoples' houses on the basis of them being straight.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "An all-straight commune would be desirable, even if eugenics are used to acheive it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "An all-gay commune would be desirable, even if eugenics are used to acheieve it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Straights are an unfairly marginalized group.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Gays are an unfairly marginalized group.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Hampering gay pride marches is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I enjoy making very heterophobic remarks just because thare is nothing wrong with it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Acceptance of sexual miorities is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Affirmative action should be given to homosexuals.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I would never sell a wedding cake to a gay or lesbian couple.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I would never sell a wedding cake to a heterosexual couple.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": -10,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Transgender people are invalid.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Cisgender people are invalid.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Transwomen are men.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Transmen are women.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Chromosomes should be the basis of all gender identity.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Transgender people are to be given special treatment because they've escaped their birth gender.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Cisgendered people should be given special treatment due to the fact that they know their gender.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Gender reassignment should be illegal, period.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Trans people are unfairly treated by society.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Cisgender people are unfairly treated by society.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I enjoy insulting trans people with slurs because there simply isn't anything wrong with it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "I enjoy insulting cis people with slurs because there is simply nothing wrong with it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Cisgenderism is deplorable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Transgenderism is deplorable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Trans adoption should be illegal.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Cis adoption should be illegal.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "'More like from male to cringey male' is an accurate description of gender transitioning.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Permanently blocking people who don't use preferred pronouns is necessary.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Eugenics against trans people are desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Eugenics against cis people are desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Fat people deserve to be mocked.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "Thin people deserve to be mocked.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "I'd rather date a thin person than a fat person.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "I'd rather date a fat person than a thin person.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "I think obesity should not be accepted too well.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "Being underweight should not be socially acceptable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "Having a high BMI is a bad thing.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "Having a low BMI is a bad thing.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "I fatshame often because there isn't anything wrong with it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "I thinshame often because there isn't anything anything wrong with it.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "Eugenics against fat people should be socially accepted.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "Eugenics against thin people should be socially accepted.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "If I owned a restaurant, I'd not sell food to a fat person.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "If I owned a restaurant, I'd not sell food to a thin person.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "The rise of obesity in children is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "Eating healthy and burning fat is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "We should have large-scale campaigns that show people the health risks of obesity..",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "We should have large-scale campaigns that show people the health risks of undernourishment.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+    {
+        "question": "Fatmocking and fatshaming should be fought with as much force as possible..",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 10
+        },
+    },
+    {
+        "question": "Thinmocking and thinshaming should be fought with as much force as possible.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": -10
+        },
+    },
+]    

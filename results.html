@@ -4,13 +4,13 @@
 <link href='style.css' rel='stylesheet' type='text/css'>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>LiberationValues</title>
+<title>DiscriminatoryValues</title>
 <meta property="og:ttl" content="600">
-<meta property="og:site_name" content="LiberationValues.github.io">
-<meta property="og:title" content="LiberationValues">
+<meta property="og:site_name" content="Afunhumaninter.github.io">
+<meta property="og:title" content="DiscriminatoryValues">
 <meta property="og:type" content="website">
-<meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
-<meta property="og:url" content="https://liberationvalues.github.io/">
+<meta property="og:description" content="DiscriminatoryValues is a political quiz aimed at anti-authoritarian leftists">
+<meta property="og:url" content="https://afunhumaninter.github.io/">
 <meta property="og:image" content="https://liberationvalues.github.io/previcon.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
@@ -21,69 +21,58 @@
   version = "Test Edition #2" //Remember to update this before making changes to the test itself!
 </script>
 </head>
-<script type="application/javascript"
-        src="ideologies.js">
-</script>
+
 
 <body>
-<h1>LiberationValues</h1>
+<h1><small>DiscriminatoryValues</small></h1>
 <hr>
 
 <h1>Results</h1>
 
-<h2>Radicality Axis: <span class="weight-300" id="radicality-label"></span></h2>
+<h2>Racism Axis: <span class="weight-300" id="racism-label"></span></h2>
 <div class="axis">
-    <img id="img-moderate" src="value_images/moderate.svg" height="128pt"/>
-    <div class="bar moderate" id="bar-moderate"><div class="text-wrapper" id="moderate"></div></div>
-    <div class="bar radical" id="bar-radical"><div class="text-wrapper" id="radical"></div></div>
-    <img id="img-radical" src="value_images/radical.svg" height="128pt"/>
+    <img id="img-whitesup" src="value_images/whitesup.svg" height="128pt"/>
+    <div class="bar whitesup" id="bar-whitesup"><div class="text-wrapper" id="whitesup"></div></div>
+    <div class="bar blacksup" id="bar-blacksup"><div class="text-wrapper" id="blacksup"></div></div>
+    <img id="img-blacksup" src="value_images/blacksup.svg" height="128pt"/>
 </div>
-<h2>Co-operation Axis: <span class="weight-300" id="co-operation-label"></span></h2>
+<h2>Sexism Axis: <span class="weight-300" id="sexism-label"></span></h2>
 <div class="axis">
-    <img id="img-leftunity" src="value_images/leftunity.svg" height="128pt"/>
-    <div class="bar leftunity" id="bar-leftunity"><div class="text-wrapper" id="leftunity"></div></div>
-    <div class="bar libunity" id="bar-libunity"><div class="text-wrapper" id="libunity"></div></div>
-    <img id="img-libunity" src="value_images/libunity.svg" height="128pt"/>
+    <img id="img-matriarchy" src="value_images/matriarchy.svg" height="128pt"/>
+    <div class="bar matriarchy" id="bar-matriarchy"><div class="text-wrapper" id="matriarchy"></div></div>
+    <div class="bar patriarchy" id="bar-patriarchy"><div class="text-wrapper" id="patriarchy"></div></div>
+    <img id="img-patriarchy" src="value_images/patriarchy.svg" height="128pt"/>
 </div>
-<h2>Ownership Axis: <span class="weight-300" id="ownership-label"></span></h2>
+<h2>Ageism Axis: <span class="weight-300" id="ageism-label"></span></h2>
 <div class="axis">
-    <img id="img-centralized" src="value_images/centralized.svg" height="128pt"/>
-    <div class="bar centralized" id="bar-centralized"><div class="text-wrapper" id="centralized"></div></div>
-    <div class="bar decentralized" id="bar-decentralized"><div class="text-wrapper" id="decentralized"></div></div>
-    <img id="img-decentralized" src="value_images/decentralized.svg" height="128pt"/>
+    <img id="img-jeunism" src="value_images/jeunism.svg" height="128pt"/>
+    <div class="bar jeunism" id="bar-jeunism"><div class="text-wrapper" id="jeunism"></div></div>
+    <div class="bar adultism" id="bar-adultism"><div class="text-wrapper" id="adultism"></div></div>
+    <img id="img-adultism" src="value_images/adultism.svg" height="128pt"/>
 </div>
-<h2>World Axis: <span class="weight-300" id="world-label"></span></h2>
+<h2>Homophobia Axis: <span class="weight-300" id="homophobia-label"></span></h2>
 <div class="axis">
-    <img id="img-localist" src="value_images/localist.svg" height="128pt"/>
-    <div class="bar localist" id="bar-localist"><div class="text-wrapper" id="localist"></div></div>
-    <div class="bar globalist" id="bar-globalist"><div class="text-wrapper" id="globalist"></div></div>
-    <img id="img-globalist" src="value_images/globalist.svg" height="128pt"/>
+    <img id="img-hetero" src="value_images/hetero.svg" height="128pt"/>
+    <div class="bar hetero" id="bar-hetero"><div class="text-wrapper" id="hetero"></div></div>
+    <div class="bar homo" id="bar-homo"><div class="text-wrapper" id="homo"></div></div>
+    <img id="img-homo" src="value_images/homo.svg" height="128pt"/>
 </div>
-<h2>Culture Axis: <span class="weight-300" id="culture-label"></span></h2>
+<h2>Transphobia Axis: <span class="weight-300" id="transphobia-label"></span></h2>
 <div class="axis">
-    <img id="img-traditionalist" src="value_images/traditionalist.svg" height="128pt"/>
-    <div class="bar traditionalist" id="bar-traditionalist"><div class="text-wrapper" id="traditionalist"></div></div>
-    <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
-    <img id="img-progressive" src="value_images/progressive.svg" height="128pt"/>
+    <img id="img-cis" src="value_images/cis.svg" height="128pt"/>
+    <div class="bar cis" id="bar-cis"><div class="text-wrapper" id="cis"></div></div>
+    <div class="bar trans" id="bar-trans"><div class="text-wrapper" id="trans"></div></div>
+    <img id="img-trans" src="value_images/trans.svg" height="128pt"/>
 </div>
-<h2>Rebelliousness Axis: <span class="weight-300" id="rebelliousness-label"></span></h2>
+<h2>Fatphobia Axis: <span class="weight-300" id="fatphobia-label"></span></h2>
 <div class="axis">
-    <img id="img-reform" src="value_images/reform.svg" height="128pt"/>
-    <div class="bar reform" id="bar-reform"><div class="text-wrapper" id="reform"></div></div>
-    <div class="bar revolution" id="bar-revolution"><div class="text-wrapper" id="revolution"></div></div>
-    <img id="img-revolution" src="value_images/revolution.svg" height="128pt"/>
+    <img id="img-thin" src="value_images/thin.svg" height="128pt"/>
+    <div class="bar thin" id="bar-thin"><div class="text-wrapper" id="thin"></div></div>
+    <div class="bar fat" id="bar-fat"><div class="text-wrapper" id="fat"></div></div>
+    <img id="img-fat" src="value_images/fat.svg" height="128pt"/>
 </div>
-<h2>Markets Axis: <span class="weight-300" id="markets-label"></span></h2>
-<div class="axis">
-    <img id="img-markets" src="value_images/markets.svg" height="128pt"/>
-    <div class="bar markets" id="bar-markets"><div class="text-wrapper" id="markets"></div></div>
-    <div class="bar planning" id="bar-planning"><div class="text-wrapper" id="planning"></div></div>
-    <img id="img-planning" src="value_images/planning.svg" height="128pt"/>
-</div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism. </p>
-<hr/>
+
+
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 
@@ -109,13 +98,12 @@
         }
     }
 
-    radiArray = ["Social Liberal","Social Democrat","Labourism","Liberal Socialism","Democratic Socialism","Libertarian Socialism","Anarchism"]
-    coopArray = ["Left Synthesis","Left Unity","Left Co-Operation","Generalist","Libertarian Co-operation","Libertarian Unity","Libertarian Synthesis"]
-    ownrArray = ["Extremely Centralized","Centralized","More Central","Balanced","More Decentral","Decentralized","Extremely Decentralized"]
-    globArray = ["Isolationist","Nationalist","Internalist","Balanced","Internationalist","Interventionalist","Globalist"]
-	progArray = ["Traditionalist","Very Conservative","Conservative","Balanced","Progressive","Very Progressive","Liberationist"]
-    reblArray = ["Extreme Revolutionary","Revolutionary","Striker","Centrist","Pacifist","Reformism","Constitutionalism"]
-	markArray = ["Very Free Market","Free Marketism","Slightly Unregualted","Regulatory","Nationalized","Planning","Full Planning"]
+    rcsmArray = ["White Supremacist","White Nationalist","White Preference","Racial Egalitarianism","Black Preference","Black Nationalism","Black Supremacism"]
+    sxsmArray = ["Radical Misandry","Matriarchy","Radical Feminism","Feminism","Masculism","Patriarchy","Radical Misogynist"]
+    agsmArray = ["Child Supremacy","Jeunism","Moderate Jeunism","Childism","Moderate Adultism","Adultism","Elder Supremacy"]
+    hmpbArray = ["Straight Supremacist","Straight Advantage","Straight Preference","Sexual Orientation Equality","Gay Preference","Gay Advantage","Gay Supremacist"]
+	cispArray = ["Cis Supremacist","Cis Advantage","Cis Preference","Transgender Equality","Trans Preference","Trans Advantage","Trans Supremacist"]
+    fatpArray = ["Malthusocrat","Thin Power","Thin Preference","Body Type Equality","Fat Preference","Fat Power","Lipostocrat"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -129,61 +117,40 @@
         	{return ""}
     }
 
-    moderate       = getQueryVariable("r")
-    leftunity      = getQueryVariable("c")
-    centralized    = getQueryVariable("o")
-    localist       = getQueryVariable("g")
-    traditionalist = getQueryVariable("p")
-    reform         = getQueryVariable("l")
-    markets        = getQueryVariable("m")
-    radical        = (100 - moderate       ).toFixed(1)
-    libunity       = (100 - leftunity      ).toFixed(1)
-    decentralized  = (100 - centralized    ).toFixed(1)
-    globalist      = (100 - localist       ).toFixed(1)
-	progressive    = (100 - traditionalist ).toFixed(1)
-    revolution     = (100 - reform         ).toFixed(1)
-    planning       = (100 - markets        ).toFixed(1)
+    whitesup        = getQueryVariable("r")
+    matriarchy      = getQueryVariable("s")
+    jeunism         = getQueryVariable("a")
+    hetero          = getQueryVariable("h")
+    cis             = getQueryVariable("t")
+    thin            = getQueryVariable("f")
+    blacksup        = (100 - whitesup        ).toFixed(1)
+    patriarchy      = (100 - matriarchy      ).toFixed(1)
+    adultism        = (100 - jeunism         ).toFixed(1)
+    homo            = (100 - hetero          ).toFixed(1)
+	trans           = (100 - cis             ).toFixed(1)
+    fat             = (100 - thin            ).toFixed(1)
 
-    setBarValue("moderate", moderate)
-    setBarValue("radical", radical)
-    setBarValue("leftunity", leftunity)
-    setBarValue("libunity", libunity)
-    setBarValue("centralized", centralized)
-    setBarValue("decentralized", decentralized)
-    setBarValue("localist", localist)
-    setBarValue("globalist", globalist)
-	setBarValue("traditionalist", traditionalist)
-    setBarValue("progressive", progressive)
-    setBarValue("reform", reform)
-    setBarValue("revolution", revolution)
-    setBarValue("markets", markets)
-    setBarValue("planning", planning)
+    setBarValue("whitesup", whitesup)
+    setBarValue("blacksup", blacksup)
+    setBarValue("matriarchy", matriarchy)
+    setBarValue("patriarchy", patriarchy)
+    setBarValue("jeunism", jeunism)
+    setBarValue("adultism", adultism)
+    setBarValue("hetero", hetero)
+    setBarValue("homo", homo)
+	setBarValue("cis", cis)
+    setBarValue("trans", trans)
+    setBarValue("thin", thin)
+    setBarValue("fat", fat)
 
-    document.getElementById("radicality-label").innerHTML = setLabel(moderate, radiArray)
-    document.getElementById("co-operation-label").innerHTML = setLabel(leftunity, coopArray)
-    document.getElementById("ownership-label").innerHTML = setLabel(centralized, ownrArray)
-    document.getElementById("world-label").innerHTML = setLabel(localist, globArray)
-    document.getElementById("culture-label").innerHTML = setLabel(traditionalist, progArray)
-    document.getElementById("rebelliousness-label").innerHTML = setLabel(revolution, reblArray)
-    document.getElementById("markets-label").innerHTML = setLabel(markets, markArray)
+    document.getElementById("racism-label").innerHTML = setLabel(whitesup, rcsmArray)
+    document.getElementById("sexism-label").innerHTML = setLabel(matriarchy, sxsmArray)
+    document.getElementById("ageism-label").innerHTML = setLabel(jeunism, agsmArray)
+    document.getElementById("homophobia-label").innerHTML = setLabel(hetero, hmpbArray)
+    document.getElementById("transphobia-label").innerHTML = setLabel(cis, cispArray)
+    document.getElementById("fatphobia-label").innerHTML = setLabel(thin, fatpArray)
 
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
-        dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.radi - moderate), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.coop - leftunity), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - centralized), 1.75)
-        dist += Math.pow(Math.abs(ideologies[i].stats.glob - localist), 1.5)
-		dist += Math.pow(Math.abs(ideologies[i].stats.prog - traditionalist), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.rebl - reform), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.mark - markets), 2)
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
-        }
-    }
-    document.getElementById("ideology-label").innerHTML = ideology
+
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -198,75 +165,66 @@
             var c = document.createElement("canvas")
                 var ctx = c.getContext("2d")
             c.width = 800;
-            c.height = 1000;
+            c.height = 900;
             ctx.fillStyle = "#141414"
-            ctx.fillRect(0,0,800,1000);
+            ctx.fillRect(0,0,800,900);
 
-            img = document.getElementById("img-moderate")
+            img = document.getElementById("img-whitesup")
             ctx.drawImage(img, 20, 170, 100, 100);
-            img = document.getElementById("img-radical")
+            img = document.getElementById("img-blacksup")
             ctx.drawImage(img, 680, 170, 100, 100)
-            img = document.getElementById("img-leftunity")
+            img = document.getElementById("img-matriarchy")
             ctx.drawImage(img, 20, 290, 100, 100)
-            img = document.getElementById("img-libunity")
+            img = document.getElementById("img-patriarchy")
             ctx.drawImage(img, 680, 290, 100, 100)
-            img = document.getElementById("img-centralized")
+            img = document.getElementById("img-jeunism")
             ctx.drawImage(img, 20, 410, 100, 100)
-            img = document.getElementById("img-decentralized")
+            img = document.getElementById("img-adultism")
             ctx.drawImage(img, 680, 410, 100, 100)
-            img = document.getElementById("img-localist")
+            img = document.getElementById("img-hetero")
             ctx.drawImage(img, 20, 530, 100, 100)
-            img = document.getElementById("img-globalist")
+            img = document.getElementById("img-homo")
             ctx.drawImage(img, 680, 530, 100, 100)
-            img = document.getElementById("img-traditionalist")
+            img = document.getElementById("img-cis")
             ctx.drawImage(img, 20, 650, 100, 100)
-            img = document.getElementById("img-progressive")
+            img = document.getElementById("img-trans")
             ctx.drawImage(img, 680, 650, 100, 100)
-            img = document.getElementById("img-reform")
+            img = document.getElementById("img-thin")
             ctx.drawImage(img, 20, 770, 100, 100)
-            img = document.getElementById("img-revolution")
+            img = document.getElementById("img-fat")
             ctx.drawImage(img, 680, 770, 100, 100)
-            img = document.getElementById("img-markets")
-            ctx.drawImage(img, 20, 890, 100, 100)
-            img = document.getElementById("img-planning")
-            ctx.drawImage(img, 680, 890, 100, 100)
 
-            ctx.fillStyle="#222222"
+            ctx.fillStyle="#222"
             ctx.fillRect(120, 180, 560, 80)
             ctx.fillRect(120, 300, 560, 80)
             ctx.fillRect(120, 420, 560, 80)
             ctx.fillRect(120, 540, 560, 80)
             ctx.fillRect(120, 660, 560, 80)
             ctx.fillRect(120, 780, 560, 80)
-            ctx.fillRect(120, 900, 560, 80)
-            ctx.fillStyle="#006aa7"
-            ctx.fillRect(120, 184, 5.6*moderate-2, 72)
-            ctx.fillStyle="#ff0000"
-            ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
-            ctx.fillStyle="#cd0000"
-            ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
-            ctx.fillStyle="#ff6600"
-            ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
-            ctx.fillStyle="#ffe000"
-            ctx.fillRect(120, 424, 5.6*centralized-2, 72)
-            ctx.fillStyle="#ffffff"
-            ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
-            ctx.fillStyle="#ff9800"
-            ctx.fillRect(120, 544, 5.6*localist-2, 72)
-            ctx.fillStyle="#03a9f4"
-            ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
-            ctx.fillStyle="#6c9569"
-            ctx.fillRect(120, 664, 5.6*traditionalist-2, 72)
-            ctx.fillStyle="#ff42ff"
-            ctx.fillRect(682-5.6*progressive, 664, 5.6*progressive-2, 72)
-            ctx.fillStyle="#ffafe4"
-            ctx.fillRect(120, 784, 5.6*reform-2, 72)
-            ctx.fillStyle="#890000"
-            ctx.fillRect(682-5.6*revolution, 784, 5.6*revolution-2, 72)
-            ctx.fillStyle="#21b8e7"
-            ctx.fillRect(120, 904, 5.6*markets-2, 72)
-            ctx.fillStyle="#ff4900"
-            ctx.fillRect(682-5.6*planning, 904, 5.6*planning-2, 72)
+            ctx.fillStyle="#f1f1f1"
+            ctx.fillRect(120, 184, 5.6*whitesup-2, 72)
+            ctx.fillStyle="#303030"
+            ctx.fillRect(682-5.6*blacksup, 184, 5.6*blacksup-2, 72)
+            ctx.fillStyle="#eb14eb"
+            ctx.fillRect(120, 304, 5.6*matriarchy-2, 72)
+            ctx.fillStyle="#1414eb"
+            ctx.fillRect(682-5.6*patriarchy, 304, 5.6*patriarchy-2, 72)
+            ctx.fillStyle="#eedbdb"
+            ctx.fillRect(120, 424, 5.6*jeunism-2, 72)
+            ctx.fillStyle="#6b0000"
+            ctx.fillRect(682-5.6*adultism, 424, 5.6*adultism-2, 72)
+            ctx.fillStyle="#585858"
+            ctx.fillRect(120, 544, 5.6*hetero-2, 72)
+            ctx.fillStyle="#0de961"
+            ctx.fillRect(682-5.6*homo, 544, 5.6*homo-2, 72)
+            ctx.fillStyle="#797979"
+            ctx.fillRect(120, 664, 5.6*cis-2, 72)
+            ctx.fillStyle="#ef187c"
+            ctx.fillRect(682-5.6*trans, 664, 5.6*trans-2, 72)
+            ctx.fillStyle="#540769"
+            ctx.fillRect(120, 784, 5.6*thin-2, 72)
+            ctx.fillStyle="#dca838"
+            ctx.fillRect(682-5.6*fat, 784, 5.6*fat-2, 72)
             ctx.fillStyle="#EEEEEE"
             ctx.font="700 60px Montserrat"
             ctx.textAlign="left"
@@ -275,143 +233,127 @@
             ctx.fillText(ideology, 20, 140)
             ctx.fillStyle="#222222"
             ctx.textAlign="left"
-            if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
-            if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
-            if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
-            if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
-            if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
-            if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
-            if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
+            if (whitesup        > 30) {ctx.fillText(whitesup + "%", 130, 237.5)}
+            if (matriarchy      > 30) {ctx.fillText(matriarchy + "%", 130, 357.5)}
+            if (jeunism         > 30) {ctx.fillText(jeunism + "%", 130, 477.5)}
+            if (hetero          > 30) {ctx.fillText(hetero + "%", 130, 597.5)}
+            if (cis             > 30) {ctx.fillText(cis + "%", 130, 717.5)}
+            if (thin            > 30) {ctx.fillText(thin + "%", 130, 837.5)}
             ctx.textAlign="right"
-            if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
-            if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
-            if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
-            if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
-            if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
-            if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
-            if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
+            if (blacksup        > 30) {ctx.fillText(blacksup + "%", 670, 237.5)}
+            if (patriarchy      > 30) {ctx.fillText(patriarchy + "%", 670, 357.5)}
+            if (adultism        > 30) {ctx.fillText(adultism + "%", 670, 477.5)}
+            if (homo            > 30) {ctx.fillText(homo + "%", 670, 597.5)}
+            if (trans           > 30) {ctx.fillText(trans + "%", 670, 717.5)}
+            if (fat             > 30) {ctx.fillText(fat + "%", 670, 837.5)}
             ctx.fillStyle="#EEEEEE"
             ctx.font="300 25px Montserrat"
             ctx.fillText("liberationvalues.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 655)
-            ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 775)
-            ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 895)
+            ctx.fillText("Racism Axis: " + document.getElementById("racism-label").innerHTML, 400, 175)
+            ctx.fillText("Sexism Axis: " + document.getElementById("sexism-label").innerHTML, 400, 295)
+            ctx.fillText("Ageism Axis: " + document.getElementById("ageism-label").innerHTML, 400, 415)
+            ctx.fillText("Homophobia Axis: " + document.getElementById("homophobia-label").innerHTML, 400, 535)
+            ctx.fillText("Transphobia Axis: " + document.getElementById("transphobia-label").innerHTML, 400, 655)
+            ctx.fillText("Fatphobia Axis: " + document.getElementById("fatphobia-label").innerHTML, 400, 775)
+
 
             document.getElementById("banner").src = c.toDataURL();
     } else {
             var c = document.createElement("canvas")
                 var ctx = c.getContext("2d")
             c.width = 800;
-            c.height = 1000;
+            c.height = 900;
             ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0,0,800,1000);
+            ctx.fillRect(0,0,800,900);
 
-            img = document.getElementById("img-moderate")
+            img = document.getElementById("img-whitesup")
             ctx.drawImage(img, 20, 170, 100, 100);
-            img = document.getElementById("img-radical")
+            img = document.getElementById("img-blacksup")
             ctx.drawImage(img, 680, 170, 100, 100)
-            img = document.getElementById("img-leftunity")
+            img = document.getElementById("img-matriarchy")
             ctx.drawImage(img, 20, 290, 100, 100)
-            img = document.getElementById("img-libunity")
+            img = document.getElementById("img-patriarchy")
             ctx.drawImage(img, 680, 290, 100, 100)
-            img = document.getElementById("img-centralized")
+            img = document.getElementById("img-jeunism")
             ctx.drawImage(img, 20, 410, 100, 100)
-            img = document.getElementById("img-decentralized")
+            img = document.getElementById("img-adultism")
             ctx.drawImage(img, 680, 410, 100, 100)
-            img = document.getElementById("img-localist")
+            img = document.getElementById("img-hetero")
             ctx.drawImage(img, 20, 530, 100, 100)
-            img = document.getElementById("img-globalist")
+            img = document.getElementById("img-homo")
             ctx.drawImage(img, 680, 530, 100, 100)
-            img = document.getElementById("img-traditionalist")
+            img = document.getElementById("img-cis")
             ctx.drawImage(img, 20, 650, 100, 100)
-            img = document.getElementById("img-progressive")
+            img = document.getElementById("img-trans")
             ctx.drawImage(img, 680, 650, 100, 100)
-            img = document.getElementById("img-reform")
+            img = document.getElementById("img-thin")
             ctx.drawImage(img, 20, 770, 100, 100)
-            img = document.getElementById("img-revolution")
+            img = document.getElementById("img-fat")
             ctx.drawImage(img, 680, 770, 100, 100)
-            img = document.getElementById("img-markets")
-            ctx.drawImage(img, 20, 890, 100, 100)
-            img = document.getElementById("img-planning")
-            ctx.drawImage(img, 680, 890, 100, 100)
 
-            ctx.fillStyle="#222222"
+            ctx.fillStyle="#222"
             ctx.fillRect(120, 180, 560, 80)
             ctx.fillRect(120, 300, 560, 80)
             ctx.fillRect(120, 420, 560, 80)
             ctx.fillRect(120, 540, 560, 80)
             ctx.fillRect(120, 660, 560, 80)
             ctx.fillRect(120, 780, 560, 80)
-            ctx.fillRect(120, 900, 560, 80)
-            ctx.fillStyle="#006aa7"
-            ctx.fillRect(120, 184, 5.6*moderate-2, 72)
-            ctx.fillStyle="#ff0000"
-            ctx.fillRect(682-5.6*radical, 184, 5.6*radical-2, 72)
-            ctx.fillStyle="#cd0000"
-            ctx.fillRect(120, 304, 5.6*leftunity-2, 72)
-            ctx.fillStyle="#ff6600"
-            ctx.fillRect(682-5.6*libunity, 304, 5.6*libunity-2, 72)
-            ctx.fillStyle="#ffe000"
-            ctx.fillRect(120, 424, 5.6*centralized-2, 72)
-            ctx.fillStyle="#ffffff"
-            ctx.fillRect(682-5.6*decentralized, 424, 5.6*decentralized-2, 72)
-            ctx.fillStyle="#ff9800"
-            ctx.fillRect(120, 544, 5.6*localist-2, 72)
-            ctx.fillStyle="#03a9f4"
-            ctx.fillRect(682-5.6*globalist, 544, 5.6*globalist-2, 72)
-            ctx.fillStyle="#6c9569"
-            ctx.fillRect(120, 664, 5.6*traditionalist-2, 72)
-            ctx.fillStyle="#ff42ff"
-            ctx.fillRect(682-5.6*progressive, 664, 5.6*progressive-2, 72)
-            ctx.fillStyle="#ffafe4"
-            ctx.fillRect(120, 784, 5.6*reform-2, 72)
-            ctx.fillStyle="#890000"
-            ctx.fillRect(682-5.6*revolution, 784, 5.6*revolution-2, 72)
-            ctx.fillStyle="#21b8e7"
-            ctx.fillRect(120, 904, 5.6*markets-2, 72)
-            ctx.fillStyle="#ff4900"
-            ctx.fillRect(682-5.6*planning, 904, 5.6*planning-2, 72)
+            ctx.fillStyle="#f1f1f1"
+            ctx.fillRect(120, 184, 5.6*whitesup-2, 72)
+            ctx.fillStyle="#303030"
+            ctx.fillRect(682-5.6*blacksup, 184, 5.6*blacksup-2, 72)
+            ctx.fillStyle="#eb14eb"
+            ctx.fillRect(120, 304, 5.6*matriarchy-2, 72)
+            ctx.fillStyle="#1414eb"
+            ctx.fillRect(682-5.6*patriarchy, 304, 5.6*patriarchy-2, 72)
+            ctx.fillStyle="#eedbdb"
+            ctx.fillRect(120, 424, 5.6*jeunism-2, 72)
+            ctx.fillStyle="#6b0000"
+            ctx.fillRect(682-5.6*adultism, 424, 5.6*adultism-2, 72)
+            ctx.fillStyle="#585858"
+            ctx.fillRect(120, 544, 5.6*hetero-2, 72)
+            ctx.fillStyle="#0de961"
+            ctx.fillRect(682-5.6*homo, 544, 5.6*homo-2, 72)
+            ctx.fillStyle="#797979"
+            ctx.fillRect(120, 664, 5.6*cis-2, 72)
+            ctx.fillStyle="#ef187c"
+            ctx.fillRect(682-5.6*trans, 664, 5.6*trans-2, 72)
+            ctx.fillStyle="#540769"
+            ctx.fillRect(120, 784, 5.6*thin-2, 72)
+            ctx.fillStyle="#dca838"
+            ctx.fillRect(682-5.6*fat, 784, 5.6*fat-2, 72)
             ctx.fillStyle="#222222"
             ctx.font="700 60px Montserrat"
             ctx.textAlign="left"
-            ctx.fillText("liberationvalues", 20, 90)
-            ctx.font="50px Montserrat"
-            ctx.fillText(ideology, 20, 140)
+            ctx.fillText("DiscriminatoryValues", 20, 125)
 
             ctx.textAlign="left"
-            if (moderate       > 30) {ctx.fillText(moderate + "%", 130, 237.5)}
-            if (leftunity      > 30) {ctx.fillText(leftunity + "%", 130, 357.5)}
-            if (centralized    > 30) {ctx.fillText(centralized + "%", 130, 477.5)}
-            if (localist       > 30) {ctx.fillText(localist + "%", 130, 597.5)}
-            if (traditionalist > 30) {ctx.fillText(traditionalist + "%", 130, 717.5)}
-            if (reform         > 30) {ctx.fillText(reform + "%", 130, 837.5)}
-            if (markets        > 30) {ctx.fillText(markets + "%", 130, 957.5)}
+            if (whitesup        > 30) {ctx.fillText(whitesup + "%", 130, 237.5)}
+            if (matriarchy      > 30) {ctx.fillText(matriarchy + "%", 130, 357.5)}
+            if (jeunism         > 30) {ctx.fillText(jeunism + "%", 130, 477.5)}
+            if (hetero          > 30) {ctx.fillText(hetero + "%", 130, 597.5)}
+            if (cis             > 30) {ctx.fillText(cis + "%", 130, 717.5)}
+            if (thin            > 30) {ctx.fillText(thin + "%", 130, 837.5)}
             ctx.textAlign="right"
-            if (radical        > 30) {ctx.fillText(radical + "%", 670, 237.5)}
-            if (libunity       > 30) {ctx.fillText(libunity + "%", 670, 357.5)}
-            if (decentralized  > 30) {ctx.fillText(decentralized + "%", 670, 477.5)}
-            if (globalist      > 30) {ctx.fillText(globalist + "%", 670, 597.5)}
-            if (progressive    > 30) {ctx.fillText(progressive + "%", 670, 717.5)}
-            if (revolution     > 30) {ctx.fillText(revolution + "%", 670, 837.5)}
-            if (planning       > 30) {ctx.fillText(planning + "%", 670, 957.5)}
+            if (blacksup        > 30) {ctx.fillText(blacksup + "%", 670, 237.5)}
+            if (patriarchy      > 30) {ctx.fillText(patriarchy + "%", 670, 357.5)}
+            if (adultism        > 30) {ctx.fillText(adultism + "%", 670, 477.5)}
+            if (homo            > 30) {ctx.fillText(homo + "%", 670, 597.5)}
+            if (trans           > 30) {ctx.fillText(trans + "%", 670, 717.5)}
+            if (fat             > 30) {ctx.fillText(fat + "%", 670, 837.5)}
 
             ctx.font="300 25px Montserrat"
-            ctx.fillText("liberationvalues.github.io", 780, 40)
+            ctx.fillText("afunhumaninter.github.io", 780, 40)
 	    	ctx.fillText(version, 780, 70)
             ctx.textAlign="center"
-            ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
-            ctx.fillText("Co-operation Axis: " + document.getElementById("co-operation-label").innerHTML, 400, 295)
-            ctx.fillText("Ownership Axis: " + document.getElementById("ownership-label").innerHTML, 400, 415)
-            ctx.fillText("World Axis: " + document.getElementById("world-label").innerHTML, 400, 535)
-            ctx.fillText("Culture Axis: " + document.getElementById("culture-label").innerHTML, 400, 655)
-            ctx.fillText("Rebelliousness Axis: " + document.getElementById("rebelliousness-label").innerHTML, 400, 775)
-            ctx.fillText("Markets Axis: " + document.getElementById("markets-label").innerHTML, 400, 895)
+            ctx.fillText("Racism Axis: " + document.getElementById("racism-label").innerHTML, 400, 175)
+            ctx.fillText("Sexism Axis: " + document.getElementById("sexism-label").innerHTML, 400, 295)
+            ctx.fillText("Ageism Axis: " + document.getElementById("ageism-label").innerHTML, 400, 415)
+            ctx.fillText("Homophobia Axis: " + document.getElementById("homophobia-label").innerHTML, 400, 535)
+            ctx.fillText("Transphobia Axis: " + document.getElementById("transphobia-label").innerHTML, 400, 655)
+            ctx.fillText("Fatphobia Axis: " + document.getElementById("fatphobia-label").innerHTML, 400, 775)
 
             document.getElementById("banner").src = c.toDataURL();
         }

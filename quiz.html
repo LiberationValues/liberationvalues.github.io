@@ -4,13 +4,13 @@
 <link href='style.css' rel='stylesheet' type='text/css'>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>LiberationValues</title>
+<title>DiscriminatoryValues</title>
 <meta property="og:ttl" content="600">
-<meta property="og:site_name" content="LiberationValues.github.io">
-<meta property="og:title" content="LiberationValues">
+<meta property="og:site_name" content="Afunhumaninter.github.io">
+<meta property="og:title" content="DiscriminatoryValues">
 <meta property="og:type" content="website">
-<meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
-<meta property="og:url" content="https://liberationvalues.github.io/">
+<meta property="og:description" content="DiscriminatoryValues is a quiz that has the aim of finding how discriminatory one is on six axes.">
+<meta property="og:url" content="https://afunhumaninter.github.io/">
 <meta property="og:image" content="https://liberationvalues.github.io/previcon.png">
 <meta property="og:image:width" content="1024">
 <meta property="og:image:height" content="1024">
@@ -21,37 +21,33 @@
 <script type="application/javascript"
         src="questions.js">
 </script>
-<h1>LiberationValues</h1>
+<h1><small>DiscriminatoryValues</small></h1>
 <hr>
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
 <button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 0.67)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.33)" style="background-color: #7de381;">Partially Agree</button> <br>
+<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
 <button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.33)" style="background-color: #eb847c;">Partially Disagree</button> <br>
-<button class="button" onclick="next_question(-0.67)" style="background-color: #f44336;">Disagree</button> <br>
+<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
 <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
-
 <!-- JavaScript for the test itself -->
 <script>
-    var max_radi, max_coop, max_ownr, max_glob, max_prog, max_rebl, max_mark // Max possible scores
-    max_radi = max_coop = max_ownr = max_glob = max_prog = max_rebl = max_mark = 0;
-    var radi, coop, ownr, glob, prog, rebl, mark // User's scores
-    radi = coop = ownr = glob = prog = rebl = mark = 0;
+    var max_rcsm, max_sxsm, max_agsm, max_hmpb, max_cisp, max_fatp // Max possible scores
+    max_rcsm = max_sxsm = max_agsm = max_hmpb = max_cisp = max_fatp = 0;
+    var rcsm, sxsm, agsm, hmpb, cisp, fatp // User's scores
+    rcsm = sxsm = agsm = hmpb = cisp = fatp = 0;
     var qn = 0; // Question number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_radi += Math.abs(questions[i].effect.radi)
-        max_coop += Math.abs(questions[i].effect.coop)
-        max_ownr += Math.abs(questions[i].effect.ownr)
-        max_glob += Math.abs(questions[i].effect.glob)
-		max_prog += Math.abs(questions[i].effect.prog)
-		max_rebl += Math.abs(questions[i].effect.rebl)
-		max_mark += Math.abs(questions[i].effect.mark)
+        max_rcsm += Math.abs(questions[i].effect.rcsm)
+        max_sxsm += Math.abs(questions[i].effect.sxsm)
+        max_agsm += Math.abs(questions[i].effect.agsm)
+        max_hmpb += Math.abs(questions[i].effect.hmpb)
+		max_cisp += Math.abs(questions[i].effect.cisp)
+		max_fatp += Math.abs(questions[i].effect.fatp)
     }
     function init_question() {
         document.getElementById("question-text").innerHTML = questions[qn].question;
@@ -67,13 +63,12 @@
     }
 
     function next_question(mult) {
-        radi += mult*questions[qn].effect.radi
-        coop += mult*questions[qn].effect.coop
-        ownr += mult*questions[qn].effect.ownr
-        glob += mult*questions[qn].effect.glob
-		prog += mult*questions[qn].effect.prog
-		rebl += mult*questions[qn].effect.rebl
-		mark += mult*questions[qn].effect.mark
+        rcsm += mult*questions[qn].effect.rcsm
+        sxsm += mult*questions[qn].effect.sxsm
+        agsm += mult*questions[qn].effect.agsm
+        hmpb += mult*questions[qn].effect.hmpb
+		cisp += mult*questions[qn].effect.cisp
+		fatp += mult*questions[qn].effect.fatp
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -87,13 +82,12 @@
             return;
         }
         qn--;
-        radi -= prev_answer * questions[qn].effect.radi;
-        coop -= prev_answer * questions[qn].effect.coop;
-        ownr -= prev_answer * questions[qn].effect.ownr;
-        glob -= prev_answer * questions[qn].effect.glob;
-		prog -= prev_answer * questions[qn].effect.prog;
-		rebl -= prev_answer * questions[qn].effect.rebl;
-		mark -= prev_answer * questions[qn].effect.mark;
+        rcsm -= prev_answer * questions[qn].effect.rcsm;
+        sxsm -= prev_answer * questions[qn].effect.sxsm;
+        agsm -= prev_answer * questions[qn].effect.agsm;
+        hmpb -= prev_answer * questions[qn].effect.hmpb;
+		cisp -= prev_answer * questions[qn].effect.cisp;
+		fatp -= prev_answer * questions[qn].effect.fatp;
         prev_answer = null;
         init_question();
 
@@ -103,13 +97,12 @@
     }
     function results() {
         location.href = `results.html`
-            + `?r=${calc_score(radi,max_radi)}`
-            + `&c=${calc_score(coop,max_coop)}`
-            + `&o=${calc_score(ownr,max_ownr)}`
-			+ `&g=${calc_score(glob,max_glob)}`
-            + `&p=${calc_score(prog,max_prog)}`
-			+ `&l=${calc_score(rebl,max_rebl)}`
-			+ `&m=${calc_score(mark,max_mark)}`
+            + `?r=${calc_score(rcsm,max_rcsm)}`
+            + `&s=${calc_score(sxsm,max_sxsm)}`
+            + `&a=${calc_score(agsm,max_agsm)}`
+			+ `&h=${calc_score(hmpb,max_hmpb)}`
+            + `&t=${calc_score(cisp,max_cisp)}`
+			+ `&f=${calc_score(fatp,max_fatp)}`
     }
 </script>
 </body>

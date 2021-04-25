@@ -1,3 +1,3 @@
-# liberationvalues.github.io
-LiberationValues is a political quiz aimed at anti-authoritarian lefitsts that attempts to assign percentages for fourteen different political values. 
+# afunhumaninter.github.io
+DiscriminatoryValues is a quiz that has the aim of measuring you on twelve different discrimination-based values.
 This test is currently in active development so expect so less than perfect results
