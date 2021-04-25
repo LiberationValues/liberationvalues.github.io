@@ -1199,7 +1199,7 @@ questions = [
         },
     },
     {
-        "question": "I thinshame often because there isn't anything anything wrong with it.",
+        "question": "I thinshame often because there isn't anything wrong with it.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
