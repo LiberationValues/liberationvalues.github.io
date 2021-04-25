@@ -308,10 +308,10 @@ questions = [
         },
     },
     {
-        "question": "Women are the weaker vessel.",
+        "question": "Women are gentler, and they should have more power in government due to that trait.",
         "effect": {
             "rcsm": 0,
-            "sxsm": -10,
+            "sxsm": 10,
             "agsm": 0,
             "hmpb": 0,
             "cisp": 0,
