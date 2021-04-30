@@ -110,9 +110,9 @@ questions = [
         },
     },
     {
-        "question": "Black Lives Matter is a black nationalist organization.",
+        "question": "Black Lives Matter is not a black nationalist organization.",
         "effect": {
-            "rcsm": 10,
+            "rcsm": -10,
             "sxsm": 0,
             "agsm": 0,
             "hmpb": 0,
@@ -440,7 +440,7 @@ questions = [
         },
     },
     {
-        "question": "Children are less developed than adults.",
+        "question": "Adults take precedence over children.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -495,7 +495,7 @@ questions = [
         },
     },
     {
-        "question": "There is nothing wrong with minimum drinking ages.",
+        "question": "There is nothing wrong with arresting minors in possession of alcohol or drugs.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -506,7 +506,7 @@ questions = [
         },
     },
     {
-        "question": "There is nothing wrong with maximum drinking ages.",
+        "question": "There is nothing wrong with arresting adults or old people in possession of alcohol or drugs.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -517,7 +517,7 @@ questions = [
         },
     },
     {
-        "question": "Giving children full autonomy over their bodies would be disastrous.",
+        "question": "People under a certain age (16 for example) should not be allowed to drive.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -528,7 +528,7 @@ questions = [
         },
     },
     {
-        "question": "Giving the elderly full bodily autonomy over their bodies would be disastrous.",
+        "question": "People over a certain age (80 for example) should not be allowed to drive.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -572,7 +572,7 @@ questions = [
         },
     },
     {
-        "question": "Adults and the elderly are incompetent when it coems to making good decisions about permanent life choices.",
+        "question": "Adults and the elderly are incompetent when it comes to making good decisions about permanent life choices.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -605,7 +605,18 @@ questions = [
         },
     },
     {
-        "question": "The elder is to rule, and the younger is to submit.",
+        "question": "Children take precedence over adults.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 10,
+            "hmpb": 0,
+            "cisp": 0,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "We must keep children out of governemnt.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
@@ -616,18 +627,7 @@ questions = [
         },
     },
     {
-        "question": "Children do not need any rights at all.",
-        "effect": {
-            "rcsm": 0,
-            "sxsm": 0,
-            "agsm": -10,
-            "hmpb": 0,
-            "cisp": 0,
-            "fatp": 0
-        },
-    },
-    {
-        "question": "Elderly folk should not have any rights at all.",
+        "question": "We must keep the elderly out of governemnt.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
