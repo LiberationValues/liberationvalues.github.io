@@ -110,7 +110,7 @@ questions = [
         },
     },
     {
-        "question": "Black Lives Matter is not a black nationalist organization.",
+        "question": "Black Lives Matter is not a black nationalist or anti-white organization.",
         "effect": {
             "rcsm": -10,
             "sxsm": 0,
@@ -121,7 +121,7 @@ questions = [
         },
     },
     {
-        "question": "Alt-Right racial theory is perfect.",
+        "question": "Alt-Right racial theory is good.",
         "effect": {
             "rcsm": 10,
             "sxsm": 0,
@@ -132,7 +132,7 @@ questions = [
         },
     },
     {
-        "question": "In my opinion, blacks are more likely to be criminals than whites.",
+        "question": "In my opinion, blacks are more predisposed to crime than whites.",
         "effect": {
             "rcsm": 10,
             "sxsm": 0,
