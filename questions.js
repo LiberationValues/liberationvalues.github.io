@@ -836,7 +836,7 @@ questions = [
         },
     },
     {
-        "question": "Acceptance of sexual miorities is desirable.",
+        "question": "Acceptance of sexual minorities is desirable.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
