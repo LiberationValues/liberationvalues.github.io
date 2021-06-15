@@ -174,86 +174,74 @@ div.text-wrapper {
     margin-right: auto;
 }
 
-div.moderate {
-    background-color: #006aa7;
+div.whitesup {
+    background-color: #f1f1f1;
     text-align: left;
     border-right-style: solid;
 }
 
-div.radical {
-    background-color: #ff0000;
+div.blacksup {
+    background-color: #303030;
     text-align: right;
     border-left-style: solid;
 }
 
-div.leftunity {
-    background-color: #cd0000;
+div.matriarchy {
+    background-color: #eb14eb;
     text-align: left;
     border-right-style: solid;
 }
 
-div.libunity {
-    background-color: #ff6600;
+div.patriarchy {
+    background-color: #1414eb;
     text-align: right;
     border-right-style: solid;
 }
 
-div.centralized {
-    background-color: #ffe000;
+div.jeunism {
+    background-color: #eedbdb;
     text-align: left;
     border-left-style: solid;
 }
 
-div.decentralized {
-    background-color: #ffffff;
+div.adultism {
+    background-color: #6b0000;
     text-align: right;
     border-left-style: solid;
 }
 
-div.localist {
-    background-color: #ff9800;
+div.hetero {
+    background-color: #585858;
     text-align: left;
     border-right-style: solid;
 }
 
-div.globalist {
-    background-color: #03a9f4;
+div.homo {
+    background-color: #0de961;
     text-align: right;
     border-left-style: solid;
 }
 
-div.traditionalist {
-    background-color: #6c9569;
+div.cis {
+    background-color: #797979;
     text-align: left;
     border-right-style: solid;
 }
 
-div.progressive {
-    background-color: #ff42ff;
+div.trans {
+    background-color: #ef187c;
     text-align: right;
     border-right-style: solid;
 }
 
-div.reform {
-    background-color: #ffafe4;
+div.thin {
+    background-color: #540769;
     text-align: left;
     border-right-style: solid;
 }
 
-div.revolution {
-    background-color: #890000;
-    text-align: right;
-    border-right-style: solid;
-}
-
-div.markets {
-    background-color: #21b8e7;
-    text-align: left;
-    border-right-style: solid;
-}
-
-div.planning {
-    background-color: #ff4900;
+div.fat {
+    background-color: #dca838;
     text-align: right;
     border-right-style: solid;
 }
