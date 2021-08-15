@@ -902,39 +902,6 @@ questions = [
         },
     },
     {
-        "question": "Transwomen are men.",
-        "effect": {
-            "rcsm": 0,
-            "sxsm": 0,
-            "agsm": 0,
-            "hmpb": 0,
-            "cisp": 10,
-            "fatp": 0
-        },
-    },
-    {
-        "question": "Transmen are women.",
-        "effect": {
-            "rcsm": 0,
-            "sxsm": 0,
-            "agsm": 0,
-            "hmpb": 0,
-            "cisp": 10,
-            "fatp": 0
-        },
-    },
-    {
-        "question": "Chromosomes should be the basis of all gender identity.",
-        "effect": {
-            "rcsm": 0,
-            "sxsm": 0,
-            "agsm": 0,
-            "hmpb": 0,
-            "cisp": 10,
-            "fatp": 0
-        },
-    },
-    {
         "question": "Transgender people are to be given special treatment because they've escaped their birth gender.",
         "effect": {
             "rcsm": 0,
@@ -947,17 +914,6 @@ questions = [
     },
     {
         "question": "Cisgendered people should be given special treatment due to the fact that they know their gender.",
-        "effect": {
-            "rcsm": 0,
-            "sxsm": 0,
-            "agsm": 0,
-            "hmpb": 0,
-            "cisp": 10,
-            "fatp": 0
-        },
-    },
-    {
-        "question": "Gender reassignment should be illegal, period.",
         "effect": {
             "rcsm": 0,
             "sxsm": 0,
