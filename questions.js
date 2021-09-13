@@ -742,5 +742,17 @@ questions = [
             "rebl": 0,
             "mark": 0
         }
+    },
+    {
+        "question": "Capitalism corrupts culture",
+        "effect": {
+            "radi": 0,
+            "coop": 0,
+            "ownr": 0,
+            "glob": 0,
+            "prog": 10,
+            "rebl": 0,
+            "mark": 0
+        }
     }
 ];
