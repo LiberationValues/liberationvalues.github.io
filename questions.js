@@ -1056,6 +1056,50 @@ questions = [
         },
     },
     {
+        "question": "A higher transgender suicide rate is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "A higher cisgender suicide rate is desirable.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Most cisgender people are responsible for the ridicule they receive.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": -10,
+            "fatp": 0
+        },
+    },
+    {
+        "question": "Most transgender people are responsible for the ridicule they receive.",
+        "effect": {
+            "rcsm": 0,
+            "sxsm": 0,
+            "agsm": 0,
+            "hmpb": 0,
+            "cisp": 10,
+            "fatp": 0
+        },
+    },
+    {
         "question": "Fat people deserve to be mocked.",
         "effect": {
             "rcsm": 0,
