@@ -303,7 +303,7 @@ div.moderate {
     border-right-style: solid;
 }
 
-#moderate {
+#val-moderate {
     color: #006aa7;
 }
 
@@ -313,7 +313,7 @@ div.radical {
     border-left-style: solid;
 }
 
-#radical {
+#val-radical {
     color: #ff0000;
 }
 
@@ -323,7 +323,7 @@ div.leftunity {
     border-right-style: solid;
 }
 
-#leftunity {
+#val-leftunity {
     color: #cd0000;
 }
 
@@ -333,7 +333,7 @@ div.libunity {
     border-right-style: solid;
 }
 
-#libunity {
+#val-libunity {
     color: #ff6600;
 }
 
@@ -343,7 +343,7 @@ div.centralized {
     border-left-style: solid;
 }
 
-#centralized {
+#val-centralized {
     color: #ffe000;
 }
 
@@ -353,7 +353,7 @@ div.decentralized {
     border-left-style: solid;
 }
 
-#decentralized {
+#val-decentralized {
     color: #ffffff;
 }
 
@@ -363,7 +363,7 @@ div.localist {
     border-right-style: solid;
 }
 
-#localist {
+#val-localist {
     color: #ff9800;
 }
 
@@ -373,7 +373,7 @@ div.globalist {
     border-left-style: solid;
 }
 
-#globalist {
+#val-globalist {
     color: #03a9f4;
 }
 
@@ -383,7 +383,7 @@ div.traditionalist {
     border-right-style: solid;
 }
 
-#traditionalist {
+#val-traditionalist {
     color: #6c9569;
 }
 
@@ -393,7 +393,7 @@ div.progressive {
     border-right-style: solid;
 }
 
-#progressive {
+#val-progressive {
     color: #ff42ff;
 }
 
@@ -403,7 +403,7 @@ div.reform {
     border-right-style: solid;
 }
 
-#reform {
+#val-reform {
     color: #ffafe4;
 }
 
@@ -413,7 +413,7 @@ div.revolution {
     border-right-style: solid;
 }
 
-#revolution {
+#val-revolution {
     color: #890000;
 }
 
@@ -423,7 +423,7 @@ div.markets {
     border-right-style: solid;
 }
 
-#markets {
+#val-markets {
     color: #21b8e7;
 }
 
@@ -433,7 +433,7 @@ div.planning {
     border-right-style: solid;
 }
 
-#planning {
+#val-planning {
     color: #ff4900;
 }
 
