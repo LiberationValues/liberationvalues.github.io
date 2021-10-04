@@ -1,116 +1,37 @@
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>LiberationValues</title>
-<meta property="og:ttl" content="600">
-<meta property="og:site_name" content="LiberationValues.github.io">
-<meta property="og:title" content="LiberationValues">
-<meta property="og:type" content="website">
-<meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
-<meta property="og:url" content="https://liberationvalues.github.io/">
-<meta property="og:image" content="https://liberationvalues.github.io/previcon.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta name="theme-color" content="#000000" data-react-helmet="true">
-<meta charset="utf-8">
-</head>
-<body>
-<script type="application/javascript"
-        src="questions.js">
-</script>
-<h1>LiberationValues</h1>
-<hr>
-<h2 style="text-align:center;" id="question-number">Loading...</h2>
-<p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 0.67)" style="background-color: #4caf50;">Agree</button> <br>
-<button class="button" onclick="next_question( 0.33)" style="background-color: #7de381;">Partially Agree</button> <br>
-<button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.33)" style="background-color: #eb847c;">Partially Disagree</button> <br>
-<button class="button" onclick="next_question(-0.67)" style="background-color: #f44336;">Disagree</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
-<button class="small_button" onclick="prev_question()" id="back_button">Back</button>
-<button class="small_button_off" id="back_button_off">Back</button><br>
-
-<!-- JavaScript for the test itself -->
-<script>
-    var max_radi, max_coop, max_ownr, max_glob, max_prog, max_rebl, max_mark // Max possible scores
-    max_radi = max_coop = max_ownr = max_glob = max_prog = max_rebl = max_mark = 0;
-    var radi, coop, ownr, glob, prog, rebl, mark // User's scores
-    radi = coop = ownr = glob = prog = rebl = mark = 0;
-    var qn = 0; // Question number
-    var prev_answer = null;
-    init_question();
-    for (var i = 0; i < questions.length; i++) {
-        max_radi += Math.abs(questions[i].effect.radi)
-        max_coop += Math.abs(questions[i].effect.coop)
-        max_ownr += Math.abs(questions[i].effect.ownr)
-        max_glob += Math.abs(questions[i].effect.glob)
-		max_prog += Math.abs(questions[i].effect.prog)
-		max_rebl += Math.abs(questions[i].effect.rebl)
-		max_mark += Math.abs(questions[i].effect.mark)
-    }
-    function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
-        if (prev_answer == null) {
-            document.getElementById("back_button").style.display = 'none';
-            document.getElementById("back_button_off").style.display = 'block';
-        } else {
-            document.getElementById("back_button").style.display = 'block';
-            document.getElementById("back_button_off").style.display = 'none';
-        }
-
-    }
-
-    function next_question(mult) {
-        radi += mult*questions[qn].effect.radi
-        coop += mult*questions[qn].effect.coop
-        ownr += mult*questions[qn].effect.ownr
-        glob += mult*questions[qn].effect.glob
-		prog += mult*questions[qn].effect.prog
-		rebl += mult*questions[qn].effect.rebl
-		mark += mult*questions[qn].effect.mark
-        qn++;
-        prev_answer = mult;
-        if (qn < questions.length) {
-            init_question();
-        } else {
-            results();
-        }
-    }
-    function prev_question() {
-        if (prev_answer == null) {
-            return;
-        }
-        qn--;
-        radi -= prev_answer * questions[qn].effect.radi;
-        coop -= prev_answer * questions[qn].effect.coop;
-        ownr -= prev_answer * questions[qn].effect.ownr;
-        glob -= prev_answer * questions[qn].effect.glob;
-		prog -= prev_answer * questions[qn].effect.prog;
-		rebl -= prev_answer * questions[qn].effect.rebl;
-		mark -= prev_answer * questions[qn].effect.mark;
-        prev_answer = null;
-        init_question();
-
-    }
-    function calc_score(score,max) {
-        return (100*(max+score)/(2*max)).toFixed(1)
-    }
-    function results() {
-        location.href = `results.html`
-            + `?r=${calc_score(radi,max_radi)}`
-            + `&c=${calc_score(coop,max_coop)}`
-            + `&o=${calc_score(ownr,max_ownr)}`
-			+ `&g=${calc_score(glob,max_glob)}`
-            + `&p=${calc_score(prog,max_prog)}`
-			+ `&l=${calc_score(rebl,max_rebl)}`
-			+ `&m=${calc_score(mark,max_mark)}`
-    }
-</script>
-</body>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>LiberationValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="LiberationValues.github.io">
+        <meta property="og:title" content="LiberationValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
+        <meta property="og:url" content="https://liberationvalues.github.io/">
+        <meta property="og:image" content="https://liberationvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>LiberationValues</h1>
+        <hr>
+        <h2 style="text-align:center;" id="question-number">Loading...</h2>
+        <p class="question" id="question-text"></p>
+        <button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+        <button class="button" onclick="next_question( 0.67)" style="background-color: #4caf50;">Agree</button> <br>
+        <button class="button" onclick="next_question( 0.33)" style="background-color: #7de381;">Partially Agree</button> <br>
+        <button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
+        <button class="button" onclick="next_question(-0.33)" style="background-color: #eb847c;">Partially Disagree</button> <br>
+        <button class="button" onclick="next_question(-0.67)" style="background-color: #f44336;">Disagree</button> <br>
+        <button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+        <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
+        <button class="small_button_off" id="back_button_off">Back</button><br>
+        <script type="application/javascript" src="scripts/quiz.js"></script>
+    </body>
 </html>

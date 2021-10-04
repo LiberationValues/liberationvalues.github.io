@@ -1,72 +1,251 @@
+<!DOCTYPE html>
 <html lang="en-US">
-<head>
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
-<link href='style.css' rel='stylesheet' type='text/css'>
-<link rel="icon" type="x-icon" href="icon.png">
-<link rel="shortcut icon" type="x-icon" href="icon.png">
-<title>LiberationValues</title>
-<meta property="og:ttl" content="600">
-<meta property="og:site_name" content="LiberationValues.github.io">
-<meta property="og:title" content="LiberationValues">
-<meta property="og:type" content="website">
-<meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
-<meta property="og:url" content="https://liberationvalues.github.io/">
-<meta property="og:image" content="https://liberationvalues.github.io/previcon.png">
-<meta property="og:image:width" content="1024">
-<meta property="og:image:height" content="1024">
-<meta name="theme-color" content="#000000" data-react-helmet="true">
-<meta charset="utf-8">
-</head>
-<body>
-<a href="https://github.com/liberationvalues/liberationvalues.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
-<h1>LiberationValues</h1>
-<hr>
-<button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
-<img src="allval.svg" class="center"></img>
-<h2>What is LiberationValues?</h2>
-    <p>LiberationValues is a political quiz aimed at anti-authoritarian lefitsts that attempts to assign percentages for fourteen different political values. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br /><br />
-    There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="x-icon" href="assets/icon.png">
+        <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
+        <title>LiberationValues</title>
+        <meta property="og:ttl" content="600">
+        <meta property="og:site_name" content="LiberationValues.github.io">
+        <meta property="og:title" content="LiberationValues">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
+        <meta property="og:url" content="https://liberationvalues.github.io/">
+        <meta property="og:image" content="https://liberationvalues.github.io/assets/previcon.png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta name="theme-color" content="#000000" data-react-helmet="true">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <a href="https://github.com/liberationvalues/liberationvalues.github.io" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+        <h1>LiberationValues</h1>
+        <hr>
+        <div class="center">
+            <div class="block">
+                <div class="axis_label">RADICALITY</div>
+                <a href="#anchor1"><img src="assets/values/moderate.svg" class="column"></a>
+                <a href="#anchor1"><img src="assets/values/radical.svg" class="column"></a>
+            </div>
+            <div class="block">
+                <div class="axis_label">CO-OPERATION</div>
+                <a href="#anchor2"><img src="assets/values/leftunity.svg" class="column"></a>
+                <a href="#anchor2"><img src="assets/values/libunity.svg" class="column"></a>
+            </div>
+            <div class="block">
+                <div class="axis_label">OWNERSHIP</div>
+                <a href="#anchor3"><img src="assets/values/centralized.svg" class="column"></a>
+                <a href="#anchor3"><img src="assets/values/decentralized.svg" class="column"></a>
+            </div>    
+            <div class="block">
+                <div class="axis_label">WORLD</div>
+                <a href="#anchor4"><img src="assets/values/localist.svg" class="column"></a>
+                <a href="#anchor4"><img src="assets/values/globalist.svg" class="column"></a>
+            </div>
+            <div class="block">
+                <div class="axis_label">CULTURE</div>
+                <a href="#anchor5"><img src="assets/values/traditionalist.svg" class="column"></a>
+                <a href="#anchor5"><img src="assets/values/progressive.svg" class="column"></a>
+            </div>
+            <div class="block">
+                <div class="axis_label">REBELLIOUSNESS</div>
+                <a href="#anchor6"><img src="assets/values/reform.svg" class="column"></a>
+                <a href="#anchor6"><img src="assets/values/revolution.svg" class="column"></a>
+            </div>
+            <div class="block">
+                <div class="axis_label">MARKETS</div>
+                <a href="#anchor7"><img src="assets/values/markets.svg" class="column"></a>
+                <a href="#anchor7"><img src="assets/values/planning.svg" class="column"></a>
+            </div>
+        </div>
+        <button class="button" onclick="location.href='instructions.html';" style="font-size:36pt;">Click here to start!</button>
+        <h2>What is LiberationValues?</h2>
+            <p>LiberationValues is a political quiz aimed at anti-authoritarian lefitsts that attempts to assign percentages for fourteen different political values. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br /><br />
+            There are <b><u><span id="numOfQuestions"></span></u></b> questions in the test.</p>
 
-<h2>What are the fourteen values?</h2>
-    <p>There are seven independent axes - Radicality, Co-operation, Ownership, World, Culture, Rebelliousness and Markets - and each has two opposing values assigned to them. They are:</p>
-    <p class="value-description"><b style="color:#006aa7;">Moderate</b> (Radicality)<br/>
-       Moderate libertarian leftists believe in a bigger state than the rest of the quadrant, and may also believe in being able to reform capitalism into a welfare state.</p>
-    <p class="value-description"><b style="color:#ff0000;">Radical</b> (Radicality)<br/>
-        Radical Leftists are extremely anti-state and anti-capitalist, seeking for a world free of unjust hierarchies.</p>
-    <p class="value-description"><b style="color:#cd0000;">Left-Unity</b> (Co-operation)<br/>
-        Left unity collaborationists believe that Anarcho capitalists aren't to be trusted, thus Libertarian socialists should ally with Marxists and even Marxist-Leninists.</p>
-    <p class="value-description"><b style="color:#ff6600;">Lib-Unity</b> (Co-operation)<br/>
-        Lib Unity collaborations believe Leftists and Rightists have one common goal of a stateless society, they, thus, believe Marxism-Leninism inherently goes against their beliefs.</p>
-    <p class="value-description"><b style="color:#ffe000;">Centralized</b> (Ownership)<br/>
-        Centralists believe that state ownership is the best way to gradually transforms capitalism.</p>
-    <p class="value-description"><b style="color:#000000;">Decentralized</b> (Ownership)<br/>
-        Decentralists reject state ownership and advocate for communal or workers ownership.</p>
-    <p class="value-description"><b style="color:#ff9800;">Localist</b> (World)<br/>
-        Localists believe in Isolation from the world, or putting your own community above oworld issue and defend it from foreign capitalists.</p>
-    <p class="value-description"><b style="color:#03a9f4;">Globalist</b> (World)<br/>
-        Globalists believe that all nations must reject borders and unite into one World union.</p>
-    <p class="value-description"><b style="color:#6c9569;">Traditionalist</b> (Culture)<br/>
-        Traditionalists value preservation of culture above all forms of social progress deeming it to be a fundamental building block of society that should not be erased.</p>
-    <p class="value-description"><b style="color:#ff42ff;">Progressive</b> (Culture)<br/>
-        Social progressives value the liberation of queer individuals and historically opressed ethnical groups above preservation of culture.</p>
-    <p class="value-description"><b style="color:#ffafe4;">Reform</b> (Rebelliousness)<br/>
-        Reformists value gradualism as a viable option to achieve socialism, while extreme reformists might even reject protest or direct action.</p>
-    <p class="value-description"><b style="color:#890000;">Revolution</b> (Rebelliousness)<br/>
-        Revolutionairies think reform is an illusion, and strive for revolution anytime it's possible.</p>
-    <p class="value-description"><b style="color:#21b8e7;">Markets</b> (Markets)<br/>
-        Marketeers are a vague group that support Markets as the main mode of production, while Social Democrats, or Social Libertarians believe in a fairer capitalism, Market Anarchists believe that Markets aren't inherently capitalistic.</p>
-    <p class="value-description"><b style="color:#ff4900;">Planning</b> (Markets)<br/>
-        Advocaters for decentral planning believe that it's more efficient and less bureaucratic than central planning, while central planning is top-down, decentral is bottom-up.</p>
-<h2>What's the "Closest Match" mean at the bottom of the results?</h2>
-    <p>In addition to matching you to the fourteen values, the quiz also attempts to match you to a political ideology. This is a work in progress and is much less accurate than the values and axes, so don't take it too seriously. If you disagree with your assigned ideology we'll look into adjusting the system.</p>
-<h2>I don't like my scores!</h2>
-    <p>¯\_(ツ)_/¯<br/>
-    If you have any suggestions or constructive criticism, feel free to open an issue on the GitHub page here: <a href="https://github.com/liberationvalues/liberationvalues.github.io">GitHub Page</a></p>
+        <h2>What are the fourteen values?</h2>
+        <br>
+        <div class="expl-block">
+            <!--Radicality axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="moderate">MODERATE</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Moderate libertarian leftists believe in a bigger state than the rest of the quadrant, and may also believe in being able to reform capitalism into a welfare state.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor1"></a>
+                    <p class="axis">RADICALITY</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="radical">RADICAL</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Radical Leftists are extremely anti-state and anti-capitalist, seeking for a world free of unjust hierarchies.
+                    </p>
+                </div>
+            </div>
+            <!--Co-operation axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="leftunity">LEFT-UNITY</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Left unity collaborationists believe that Anarcho capitalists aren't to be trusted, thus Libertarian socialists should ally with Marxists and even Marxist-Leninists.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor2"></a>
+                    <p class="axis">CO-OPERATION</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="libunity">LIB-UNITY</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Lib Unity collaborations believe Leftists and Rightists have one common goal of a stateless society, they, thus, believe Marxism-Leninism inherently goes against their beliefs.
+                    </p>
+                </div>
+            </div>
+            <!--Ownership axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="centralized">CENTRALIZED</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Centralists believe that state ownership is the best way to gradually transforms capitalism.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor3"></a>
+                    <p class="axis">OWNERSHIP</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="decentralized">DECENTRALIZED</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Decentralists reject state ownership and advocate for communal or workers ownership.
+                    </p>
+                </div>
+            </div>
+            <!--World axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="localist">LOCALIST</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Localists believe in Isolation from the world, or putting your own community above oworld issue and defend it from foreign capitalists.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor4"></a>
+                    <p class="axis">WORLD</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="globalist">GLOBALIST</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Globalists believe that all nations must reject borders and unite into one World union.
+                    </p>
+                </div>
+            </div>
+            <!--Culture axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="traditionalist">TRADITIONALIST</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Traditionalists value preservation of culture above all forms of social progress deeming it to be a fundamental building block of society that should not be erased.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor5"></a>
+                    <p class="axis">CULTURE</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="progressive">PROGRESSIVE</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Social progressives value the liberation of queer individuals and historically opressed ethnical groups above preservation of culture.
+                    </p>
+                </div>
+            </div>
+            <!--Rebelliosness axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="reform">REFORM</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Reformists value gradualism as a viable option to achieve socialism, while extreme reformists might even reject protest or direct action.
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor6"></a>
+                    <p class="axis">REBELLIOUSNESS</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="revolution">REVOLUTION</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Revolutionairies think reform is an illusion, and strive for revolution anytime it's possible.
+                    </p>
+                </div>
+            </div>
+            <!--Market axis-->
+            <div class="spacer">
+                <div class="expl-left">
+                    <p class="index-value">
+                        <b id="markets">MARKETS</b>
+                    </p>
+                    <p class="expl-text-left">
+                        Marketeers are a vague group that support Markets as the main mode of production, while Social Democrats, or Social Libertarians believe in a fairer capitalism, Market Anarchists believe that Markets aren't inherently capitalistic
+                    </p>
+                </div>
+                <div class="expl-axis">
+                    <a id="anchor7"></a>
+                    <p class="axis">MARKETS</p>
+                    <img class="arrows" src="assets/arrow.svg"></img>
+                </div>
+                <div class="expl-right">
+                    <p class="index-value">
+                        <b id="planning">PLANNING</b>
+                    </p>
+                    <p class="expl-text-right">
+                        Advocaters for decentral planning believe that it's more efficient and less bureaucratic than central planning, while central planning is top-down, decentral is bottom-up.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2>What's the "Closest Match" mean at the bottom of the results?</h2>
+            <p>In addition to matching you to the fourteen values, the quiz also attempts to match you to a political ideology. This is a work in progress and is much less accurate than the values and axes, so don't take it too seriously. If you disagree with your assigned ideology we'll look into adjusting the system.</p>
+        <h2>I don't like my scores!</h2>
+            <p>¯\_(ツ)_/¯<br/>
+            If you have any suggestions or constructive criticism, feel free to open an issue on the GitHub page here: <a href="https://github.com/liberationvalues/liberationvalues.github.io">GitHub Page</a></p>
 
-<!-- This is the script for the page itself -->
-<script type="application/javascript"src="questions.js"></script>
-<script type="text/javascript">
-    document.getElementById("numOfQuestions").innerHTML = questions.length;
-</script>
-</body>
+        <script type="text/javascript">
+            fetch("JSON/questions.json")
+                .then(response => response.json())
+                .then(data => document.getElementById("numOfQuestions").innerHTML = data.length)
+        </script>
+    </body>
 </html>
