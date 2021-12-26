@@ -481,6 +481,7 @@ span.weight-300 {
     }
     .small_button, .small_button_off {
         background-color: #ddd;
+        color: #000
     }
 
     .small_button_off {

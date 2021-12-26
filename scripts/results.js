@@ -1,4 +1,4 @@
-import drawCanvas from './modules/canvas.js'
+import drawCanvas from './modules/canvas.mjs'
 
 function getQueryVariable(variable)
 {
