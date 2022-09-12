@@ -73,7 +73,7 @@ function parse_ideology(ideologies){
     const globArray = ["Isolationist","Nationalist","Internalist","Balanced","Internationalist","Interventionalist","Globalist"]
     const progArray = ["Traditionalist","Very Conservative","Conservative","Balanced","Progressive","Very Progressive","Liberationist"]
     const reblArray = ["Extreme Revolutionary","Revolutionary","Striker","Centrist","Pacifist","Reformism","Constitutionalism"]
-    const markArray = ["Very Free Market","Free Marketism","Slightly Unregualted","Regulatory","Nationalized","Planning","Full Planning"]
+    const markArray = ["Very Free Market","Free Marketism","Slightly Unregulated","Regulatory","Nationalized","Planning","Full Planning"]
 
     document.getElementById("radicality-label").innerHTML = setLabel(moderate, radiArray)
     document.getElementById("co-operation-label").innerHTML = setLabel(leftunity, coopArray)
