@@ -60,7 +60,7 @@
         }
     },
     {
-        "question": "Since anarcho capitalists and the like believe in Voluntary association, there's no reason why we shouldn't take arms with them",
+        "question": "Since anarcho-capitalists and the like believe in Voluntary association, there's no reason why we shouldn't take arms with them",
         "effect": {
             "radi": 0,
             "coop": -10,
@@ -192,7 +192,7 @@
         }
     },
     {
-        "question": "A genuine Free Market is only avaiable through a Socialist network",
+        "question": "A genuine Free Market is only available through a Socialist network",
         "effect": {
             "radi": 0,
             "coop": 0,
@@ -360,7 +360,7 @@
         }
     },
     {
-        "question": "Any Violence against undesirable people is acceptable aslong as it helps revolutionary motion.",
+        "question": "Any Violence against undesirable people is acceptable as long as it helps revolutionary motion.",
         "effect": {
             "radi": 0,
             "coop": 0,
@@ -372,7 +372,7 @@
         }
     },
     {
-        "question": "Revolution is the most succesful and ideal way of achieving a Progressive society.",
+        "question": "Revolution is the most successful and ideal way of achieving a Progressive society.",
         "effect": {
             "radi": 0,
             "coop": 0,
@@ -528,7 +528,7 @@
         }
     },
     {
-        "question": "Minority populations have the right to self-defence and to bear arms, doesn't matter the situation.",
+        "question": "Minority populations have the right to self-defense and to bear arms, doesn't matter the situation.",
         "effect": {
             "radi": 0,
             "coop": 0,
@@ -540,7 +540,7 @@
         }
     },
     {
-        "question": "The Right to bear Arms is essential to the Socialist movement, and any restrictment of it should be fought against, even by violent means if necessary.",
+        "question": "The Right to bear Arms is essential to the Socialist movement, and any restrictions of it should be fought against, even by violent means if necessary.",
         "effect": {
             "radi": 0,
             "coop": 0,
@@ -564,7 +564,7 @@
         }
     },
     {
-        "question": "If i lived in an anarcho capitalist society i'd rather contribute to increase cooperative power",
+        "question": "If i lived in an anarcho-capitalist society i'd rather contribute to increase cooperative power",
         "effect": {
             "radi": 0,
             "coop": -10,
@@ -612,7 +612,7 @@
         }
     },
     {
-        "question": "An AnCap society is either taken over by cooperative systems, or will reform into a corporatocratic state. Both ends are essentially not ideal.",
+        "question": "An AnCap society is either taken over by cooperative systems, or will reform into a corporate state. Both ends are essentially not ideal.",
         "effect": {
             "radi": 0,
             "coop": 10,
@@ -681,7 +681,7 @@
             "prog": 0,
             "rebl": 0,
             "mark": 0
-		}
+        }
     },
     {
         "question": "A centrally planned economy is needed to develop third world countries",

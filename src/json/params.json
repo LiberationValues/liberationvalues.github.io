@@ -1,0 +1,246 @@
+{
+    "buttons": [
+        {
+            "text": "Strongly Agree",
+            "color": "#1b5e20",
+            "weight": 1
+        },
+        {
+            "text": "Agree",
+            "color": "#4caf50",
+            "weight": 0.67
+        },
+        {
+            "text": "Partially Agree",
+            "color": "#7de381",
+            "weight": 0.33
+        },
+        {
+            "text": "Neutral/Unsure",
+            "color": "#bbbbbb",
+            "weight": 0
+        },
+        {
+            "text": "Partially Disagree",
+            "color": "#eb847c",
+            "weight": -0.33
+        },
+        {
+            "text": "Disagree",
+            "color": "#f44336",
+            "weight": -0.67
+        },
+        {
+            "text": "Strongly Disagree",
+            "color": "#b71c1c",
+            "weight": -1
+        }
+    ],
+    "axis": [
+        {
+            "name": "Radicality",
+            "alias": "radi",
+            "icons": [
+                "moderate.svg",
+                "radical.svg"
+            ],
+            "labels": [
+                "Moderate",
+                "Radical"
+            ],
+            "colors": [
+                "#006AA7",
+                "#F00"
+            ],
+            "desc": [
+                "Moderate libertarian leftists believe in a bigger state than the rest of the quadrant, and may also believe in being able to reform capitalism into a welfare state.",
+                "Radical Leftists are extremely anti-state and anti-capitalist, seeking for a world free of unjust hierarchies."
+            ],
+            "tiers": [
+                "Social Liberal",
+                "Social Democrat",
+                "Labourism",
+                "Liberal Socialism",
+                "Democratic Socialism",
+                "Libertarian Socialism",
+                "Anarchism"
+            ]
+        },
+        {
+            "name": "Co-operation",
+            "alias": "coop",
+            "icons": [
+                "leftunity.svg",
+                "libunity.svg"
+            ],
+            "labels": [
+                "Left-unity",
+                "Lib-unity"
+            ],
+            "colors": [
+                "#CD0000",
+                "#F60"
+            ],
+            "desc": [
+                "Left unity collaborationists believe that Anarcho-capitalists aren't to be trusted, thus Libertarian socialists should ally with Marxists and even Marxist-Leninists.",
+                "Lib Unity collaborations believe Leftists and Rightists have one common goal of a stateless society, they, thus, believe Marxism-Leninism inherently goes against their beliefs."
+            ],
+            "tiers": [
+                "Left Synthesis",
+                "Left Unity",
+                "Left Co-Operation",
+                "Generalist",
+                "Libertarian Co-operation",
+                "Libertarian Unity",
+                "Libertarian Synthesis"
+            ]
+        },
+        {
+            "name": "Ownership",
+            "alias": "ownr",
+            "icons": [
+                "centralized.svg",
+                "decentralized.svg"
+            ],
+            "labels": [
+                "Centralized",
+                "Decentralized"
+            ],
+            "colors": [
+                "#FFE000",
+                "#FFF"
+            ],
+            "desc": [
+                "Centralists believe that state ownership is the best way to gradually transforms capitalism.",
+                "Decentralists reject state ownership and advocate for communal or workers ownership."
+            ],
+            "tiers": [
+                "Extremely Centralized",
+                "Centralized",
+                "More Central",
+                "Balanced",
+                "More Decentral",
+                "Decentralized",
+                "Extremely Decentralized"
+            ]
+        },
+        {
+            "name": "World",
+            "alias": "glob",
+            "icons": [
+                "localist.svg",
+                "globalist.svg"
+            ],
+            "labels": [
+                "Localist",
+                "Globalist"
+            ],
+            "colors": [
+                "#FF9800",
+                "#03A9F4"
+            ],
+            "desc": [
+                "Localists believe in Isolation from the world, or putting your own community above world issues and defending it from foreign capitalists.",
+                "Globalists believe that all nations must reject borders and unite into one World union."
+            ],
+            "tiers": [
+                "Isolationist",
+                "Nationalist",
+                "Internalist",
+                "Balanced",
+                "Internationalist",
+                "Interventionist",
+                "Globalist"
+            ]
+        },
+        {
+            "name": "Culture",
+            "alias": "prog",
+            "icons": [
+                "traditionalist.svg",
+                "progressive.svg"
+            ],
+            "labels": [
+                "Traditionalist",
+                "Progressive"
+            ],
+            "colors": [
+                "#6C9569",
+                "#FF42FF"
+            ],
+            "desc": [
+                "Traditionalists value preservation of culture above all forms of social progress deeming it to be a fundamental building block of society that should not be erased.",
+                "Social progressives value the liberation of queer individuals and historically oppressed ethnical groups above preservation of culture."
+            ],
+            "tiers": [
+                "Traditionalist",
+                "Very Conservative",
+                "Conservative",
+                "Balanced",
+                "Progressive",
+                "Very Progressive",
+                "Liberationist"
+            ]
+        },
+        {
+            "name": "Rebelliousness",
+            "alias": "rebl",
+            "icons": [
+                "reform.svg",
+                "revolution.svg"
+            ],
+            "labels": [
+                "Reform",
+                "Revolution"
+            ],
+            "colors": [
+                "#FFAFE4",
+                "#890000"
+            ],
+            "desc": [
+                "Reformists value gradualism as a viable option to achieve socialism, while extreme reformists might even reject protest or direct action.",
+                "Revolutionaries think reform is an illusion, and strive for revolution anytime it's possible."
+            ],
+            "tiers": [
+                "Extreme Revolutionary",
+                "Revolutionary",
+                "Striker",
+                "Centrist",
+                "Pacifist",
+                "Reformism",
+                "Constitutionalism"
+            ]
+        },
+        {
+            "name": "Market",
+            "alias": "mark",
+            "icons": [
+                "markets.svg",
+                "planning.svg"
+            ],
+            "labels": [
+                "Markets",
+                "Planning"
+            ],
+            "colors": [
+                "#21B8E7",
+                "#FF4900"
+            ],
+            "desc": [
+                "Marketeers are a vague group that support Markets as the main mode of production, while Social Democrats, or Social Libertarians believe in a fairer capitalism, Market Anarchists believe that Markets aren't inherently capitalistic",
+                "Advocates for decentralized planning believe that it's more efficient and less bureaucratic than central planning, while central planning is top-down, decentralized is bottom-up."
+            ],
+            "tiers": [
+                "Very Free Market",
+                "Free Marketism",
+                "Slightly Unregulated",
+                "Regulatory",
+                "Nationalized",
+                "Planning",
+                "Full Planning"
+            ]
+        }
+    ],
+    "discord": "theghostofinky",
+    "discord_url": "https://discord.com/users/825290256910647306"
+}

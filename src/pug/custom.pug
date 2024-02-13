@@ -1,0 +1,21 @@
+doctype html
+html
+    include includes/head
+    body
+        include includes/themetoggle
+        h1 LiberationValues
+        hr        
+        h1 Custom scores
+        div(id="custom-holder")
+            canvas(id="custom")
+            button(id="download") Download
+            div(class="expl")
+                div 
+                    | Click on the bars or the values to 
+                    | set your desired score.
+            
+        script window.VERSION = "#{version}";
+        if inlineJS
+            script(type="module") !{js["custom.js"]}
+        else
+            script(type="module" src="./dist/custom.js")

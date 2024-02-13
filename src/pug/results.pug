@@ -1,0 +1,50 @@
+doctype html
+html(lang="en-US")
+    include includes/head
+    body
+        include includes/themetoggle
+        h1 LiberationValues
+        hr
+        h1 Results
+        div(class="results")
+            each val in params.axis
+                h2() #{val.name} Axis: 
+                    span(
+                        class="axis-labels"
+                        id=val.name.toLowerCase() + "-label"
+                    )
+                div(class="axis")
+                    img(
+                        class="value"
+                        src="./assets/values/" + val.icons[0]
+                    )
+                    div(
+                        class="left-bar"
+                        style=`background-color: ${val.colors[0]};`
+                        id="bar-" + val.labels[0].toLowerCase()
+                    )
+                        div(class="text-wrapper" id="span-" + val.labels[0].toLowerCase())
+                    div(
+                        class="right-bar"
+                        style=`background-color: ${val.colors[1]};`
+                        id="bar-" + val.labels[1].toLowerCase()
+                    )
+                        div(class="text-wrapper" id="span-" + val.labels[1].toLowerCase())
+                    img(
+                        class="value"
+                        src="./assets/values/" + val.icons[1]
+                    )
+        h2 Closest Match: 
+            span(id="ideology-label")
+
+        canvas(id="results")
+        a(href="index.html")
+            button Back
+        button(id="download-button") Download your scores
+        a(href="custom.html")
+            button Create your custom scores
+        script window.VERSION = "#{version}";
+        if inlineJS
+            script(type="module") !{js["results.js"]}
+        else
+            script(type="module" src="./dist/results.js")

@@ -1,0 +1,55 @@
+doctype html
+html(lang="en-US")
+    include includes/head
+    body
+        include includes/themetoggle
+        a(
+            href=url
+            class="github-corner"
+            aria-label="View source on Github"
+            )
+            include includes/github.svg
+        h1 LiberationValues
+        hr 
+        div(class="center")
+            each val, index in params.axis
+                div(class="block")
+                    div(class="axis-label")=val.name.toUpperCase()
+                    a(href="#anchor" + (index+1))
+                        img(class=column src="./assets/values/" + val.icons[0])
+                    a(href="#anchor" + (index+1))
+                        img(class=column src="./assets/values/" + val.icons[1])
+
+        a(href="instructions.html")
+            button Click here to start!
+        a(href="custom.html")
+            button Create your custom scores
+
+        h2 What is LiberationValues?
+        p !{`LiberationValues is a political quiz aimed at anti-authoritarian leftists that attempts to assign percentages for fourteen different political values. You will be presented by a statement, and then you will answer with your opinion on the statement, from <b>Strongly Agree</b> to <b>Strongly Disagree</b>, with each answer slightly affecting your scores. At the end of the quiz, your answers will be compared to the maximum possible for each value, thus giving you a percentage. Answer honestly!<br /><br />There are <b><u>${questionLength}</u></b> questions in the test.`}
+
+        h2 What are the fourteen values?
+        div(class="expl-block")
+            each val, index in params.axis
+                div(class="spacer")
+                    div(class="expl")
+                        p(style=`color: ${val.colors[0]};`)
+                            b(id=val.labels[0])=val.labels[0].toUpperCase()
+                        p(class="expl-text")=val.desc[0]
+                    div(class="expl-axis")
+                        a(id="anchor" + (index+1))
+                        p(class="axis-name")=val.name.toUpperCase()
+                        include includes/arrow.svg
+                    div(class="expl")
+                        p(class="value")
+                            b(style=`color: ${val.colors[1]};`)=val.labels[1].toUpperCase()
+                        p(class="expl-text")=val.desc[1]
+        h2 What's the "Closest Match" mean at the bottom of the results?
+            p In addition to matching you to the fourteen values, the quiz also attempts to match you to a political ideology. This is a work in progress and is much less accurate than the values and axes, so don't take it too seriously. If you disagree with your assigned ideology we'll look into adjusting the system.
+        h2 I don't like my scores!
+            p !{`¯\\_(ツ)_/¯<br>If you have any suggestions or constructive criticism, feel free to open an issue on the GitHub page here: <a href=${url}>Github Page</a>`}
+
+        if inlineJS 
+            script(type="module") !{js["index.js"]}
+        else 
+            script(type="module" src="./dist/index.js")

@@ -1,0 +1,21 @@
+{
+	"devDependencies": {
+		"@types/node": "^18.19.15",
+		"@types/pug": "^2.0.10",
+		"pug": "^3.0.2",
+		"sass": "^1.70.0",
+		"terser": "^5.27.0",
+		"tsx": "^4.7.1",
+		"typescript": "^5.3.3"
+	},
+	"scripts": {
+		"build": "tsc && sass src:dist && tsx ./build/build.ts",
+		"release": "tsc && sass src:dist --style=compressed --no-source-map && tsx ./build/build.ts --minify --delete",
+		"sass-watch": "sass -w src:dist",
+		"tsc-watch": "tsc --watch"
+	},
+	"type": "module",
+	"homepage": "https://github.com/liberationvalues/liberationvalues.github.io",
+	"version": "2.2.0",
+	"license": "MIT"
+}

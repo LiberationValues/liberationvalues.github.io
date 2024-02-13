@@ -1,0 +1,17 @@
+doctype html
+html(lang="en-US")
+    include includes/head
+    body
+        include includes/themetoggle
+        h1 LiberationValues
+        hr
+        h2() Instructions 
+        p(class="question") You will be presented with a series of statements. For each one, click the button with your opinion on it.
+        a(href="quiz.html")
+            button(style="background-color: #2196F3") Got it!
+        a(href="index.html")
+            button(style="background-color: #F44336") Wait, nevermind!
+        if inlineJS
+            script(type="module") !{js["instructions.js"]}
+        else
+            script(type="module" src="./dist/instructions.js")

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ES2022"
+        ],
+        "sourceMap": true,
+        "target": "ES2022",
+        "rootDir": "./src/ts",
+        "outDir": "./dist",
+        "module": "NodeNext",
+        "moduleResolution": "nodenext"
+    },
+    "exclude": [
+        "build/"
+    ]
+}

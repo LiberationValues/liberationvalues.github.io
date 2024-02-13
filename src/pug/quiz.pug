@@ -1,0 +1,19 @@
+doctype html
+html(lang="en-US")
+    include includes/head
+    body
+        include includes/themetoggle
+        h1 LiberationValues
+        hr
+        h2(id="question-number")
+        p(class="question" id="question-text" title="Click to toggle between fixed and variable height")
+        each button, index in params.buttons
+            button(
+                style=`background-color: ${button.color}`
+                id=`button-${index}`
+                )=button.text
+        button(class="small-button" id="back-button") Back
+        if inlineJS
+            script(type="module") !{js["quiz.js"]}
+        else
+            script(type="module" src="./dist/quiz.js")
