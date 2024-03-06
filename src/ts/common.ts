@@ -161,9 +161,9 @@ export function orderScores(scores: Map<string, number>, ideologies: Ideology[])
 }
 
 export function findTier(score: number, labels: string[]): string {
-    const tiers = [0, 10, 25, 40, 60, 75, 90];
+    const tiers = [90, 75, 60, 40, 25, 10, 0];
     for (const [i, v] of tiers.entries()) {
-        if (score >= v && score < (tiers[i + 1] ?? 100.1)) {
+        if (score >= v && score < (tiers[i - 1] ?? 100.1)) {
             return labels[i];
         }
     }
