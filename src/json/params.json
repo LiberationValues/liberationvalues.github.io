@@ -202,13 +202,13 @@
                 "Revolutionaries think reform is an illusion, and strive for revolution anytime it's possible."
             ],
             "tiers": [
-                "Extreme Revolutionary",
-                "Revolutionary",
-                "Striker",
-                "Centrist",
-                "Pacifist",
+                "Constitutionalism",
                 "Reformism",
-                "Constitutionalism"
+                "Pacifist",
+                "Centrist",
+                "Striker",
+                "Revolutionary",
+                "Extreme Revolutionary"
             ]
         },
         {
