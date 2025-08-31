@@ -1,12 +1,12 @@
 {
 	"devDependencies": {
-		"@types/node": "^18.19.15",
+		"@types/node": "^18.19.123",
 		"@types/pug": "^2.0.10",
-		"pug": "^3.0.2",
-		"sass": "^1.70.0",
-		"terser": "^5.27.0",
-		"tsx": "^4.7.1",
-		"typescript": "^5.3.3"
+		"pug": "^3.0.3",
+		"sass": "^1.91.0",
+		"terser": "^5.43.1",
+		"tsx": "^4.20.5",
+		"typescript": "^5.9.2"
 	},
 	"scripts": {
 		"build": "tsc && sass src:dist && tsx ./build/build.ts",
